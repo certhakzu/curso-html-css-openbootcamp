@@ -1,0 +1,56 @@
+/*
+Existen 5 tipos de pocisionamiento en CSS:
+
+1. STATIC: no podemos y no deberiamos editarlo. Es el que vienen por defecto.
+
+2. RELATIVE: Nos permite pocisionar un elemento en relación a la pocisión que tendría si fuera estático
+
+3. FIXED: Nos permite pocisionar un elemento de manera fija. Por ejemplo: barras de navegación que
+            queremos que este siempre arriba. En otras palabras se pocisiona en relacion a la pantalla.
+
+4. ABSOLUTE: Nos permite posicionarlo similar al fixed, pero en relacion a su elemento padre relativo.
+
+5. STICKY: Es una mezcla entre el relativo y el fijo. PEro hay que "decirle" donde queremos que se "pegue".
+            Asi, al hacer scroll modifica su posicion para quedarse donde le digamos.
+*/
+
+div {
+    border: 1px solid gray;
+    padding: 5px;
+    margin: 5px;
+    background-color: white;
+}
+
+.relative {
+    position: relative;
+    left: 80px;
+    margin-left: 10px;
+}
+
+.fixed {
+    position: fixed;
+    bottom: 0px; /*Se pondrá abajo de todo*/
+    left: 0px; /*Se pondrá a la izquierda de todo*/
+    background-color: greenyellow;
+    z-index: 10; /*Permite indicar como es el posicionamiento dle elemento en el ele Z (por encima o debajo de otros elementos)*/
+}
+
+.absolute {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.relative.contenedor {
+    width: 300px;
+    height: 1500px;
+    background-color: blue;
+}
+
+.sticky {
+    position: sticky;
+    background-color: darksalmon;
+    color: white;
+    top: 0px;
+    z-index: 2;
+}

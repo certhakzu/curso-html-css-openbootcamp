@@ -1,0 +1,58 @@
+/*
+OVERFLOW: Es lo que pasaria si en un contenedor de tamaño fijo tenemos demasiado texto
+Tiene los posibles siguientes valores:
+
+1. HIDDEN: Todo lo que sobresale, se oculta.
+
+2. SCROLL: Crea barrras de scroll (horizontal y vertical) para poder visualizar el contenido que sobresalga
+
+3. VISIBLE: Es el por defecto. Si el contenido excede las dimenciones del contenedor, entonces muestra lo 
+            que sobresale por fuera.
+
+4. AUTO: optimiza el scroll.
+*/
+
+.contenedor-hidden {
+    background-color: bisque;
+    width: 300px;
+    height: 100px;
+    padding: 15px;
+    overflow: hidden;
+}
+
+.contenedor-scroll {
+    margin: 10px 0px; /*arriba - abajo e izquierda - derecha*/
+    background-color: bisque;
+    width: 300px;
+    height: 100px;
+    padding: 15px;
+    overflow: scroll;
+}
+
+.contenedor-visible {
+    margin: 10px 0px; /*arriba - abajo e izquierda - derecha*/
+    background-color: bisque;
+    width: 300px;
+    height: 100px;
+    padding: 15px;
+    overflow: visible;
+}
+
+.contenedor-auto {
+    margin: 10px 0px; /*arriba - abajo e izquierda - derecha*/
+    background-color: bisque;
+    width: 300px;
+    height: 100px;
+    padding: 15px;
+    overflow: auto;
+}
+
+.contenedor-scroll-x {
+    margin: 10px 0px; /*arriba - abajo e izquierda - derecha*/
+    background-color: bisque;
+    width: 300px;
+    height: 100px;
+    padding: 15px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}

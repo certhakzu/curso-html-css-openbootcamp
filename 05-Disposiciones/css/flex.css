@@ -1,0 +1,35 @@
+/*Se usa mucho para diseño responsive
+
+Caja Flexible: posiciona todo lo que tenga dentro de la manera ordenada que le indiquemos
+*/
+
+.flex {
+    display: flex;
+    background-color: yellow;
+    height: 300px;
+    justify-content: space-around; /*permite aplicar el efecto del flex*/
+    /*flex-wrap: wrap;*/ /*envuelve el posicionamiento segun se lo indiquemos*/
+    align-items: center; /*Alinea los elementos*/
+    flex-direction: column; /*para cambiar ele eje por defecto*/
+}
+
+.contenido-1 {
+    background-color: white;
+    /*height: 200px;*/
+    width: 100px;
+    border: 1px solid blue;
+}
+
+.contenido-2 {
+    background-color: white;
+    /*height: 200px;*/
+    width: 100px;
+    border: 1px solid blue;
+}
+
+.contenido-3 {
+    background-color: white;
+    /*height: 200px;*/
+    width: 100px;
+    border: 1px solid blue;
+}
